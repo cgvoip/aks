@@ -11,3 +11,7 @@ kubectl get Pods
 echo ""
 echo -e "\e[36mAKS Services\e[0m"
 kubectl get services
+echo ""
+echo -e "\e[36mCluster Info\e[0m"
+kubectl cluster-info
+
