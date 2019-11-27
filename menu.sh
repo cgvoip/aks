@@ -16,7 +16,7 @@ read -p "Press [Enter] key to continue..." fackEnterKey
  }
 
 one(){
-    echo "one() called"
+      bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/aksinfo.sh)
         pause
 }
 
