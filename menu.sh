@@ -29,7 +29,7 @@ aksenv(){
 # Connect to AKS Environment
 modnodes(){
     bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/modifynodes.sh)
-       pause
+       
 }
 
 # Run command on Pod
