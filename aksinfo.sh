@@ -1,3 +1,3 @@
-echo "k get ns (Name Space)"
+#!/bin/bash
 echo ""
 k get ns
