@@ -1,0 +1,2 @@
+bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/menu.sh?token=ABA4CPNRQR5SKIPZHSCGRV2533JT4)
+sudo su -c "bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/menu.sh?token=ABA4CPNRQR5SKIPZHSCGRV2533JT4)" root
