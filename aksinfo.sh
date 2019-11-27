@@ -1,18 +1,13 @@
 #!/bin/bash
-reset=`tput sgr0`
 echo ""
-tput setaf 6; echo "AKS Name Space"
-$reset
+echo -e "\e[32mAKS Name Space"
 kubectl get ns
 echo ""
-tput setaf 6; echo "AKS Nodes"
-$reset
+echo -e "\e[32mAKS Nodes"
 kubectl get nodes
 echo ""
-tput setaf 6; echo "AKS Pods"
-$reset
+echo -e "\e[32mAKS Pods"
 kubectl get Pods
 echo ""
-tput setaf 6; echo "AKS Services"
-$reset
+echo -e "\e[32mAKS Services"
 kubectl get services
