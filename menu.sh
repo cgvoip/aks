@@ -22,7 +22,7 @@ one(){
 
 # do something in two()
 two(){
-    bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/test.sh?token=ABA4CPKSPMY2RUHI4UR4QFK533N4E)
+    bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/test.sh)
        pause
 }
 
