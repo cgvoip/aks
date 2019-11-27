@@ -55,6 +55,7 @@ show_menus() {
     echo "7. Port forward to Pod"
     echo "8. Drain Node"
     echo "9. Modify Nodes"
+    echo "10. Deploy AKS Cluster Advanced Networking"
     echo "4. Exit"
     }
 
