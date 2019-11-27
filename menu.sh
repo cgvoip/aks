@@ -15,26 +15,35 @@ pause(){
 read -p "Press [Enter] key to continue..." fackEnterKey
  }
 
-one(){
+aksinfo(){
       bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/aksinfo.sh)
         pause
 }
 
-# do something in two()
-two(){
+# Connect to AKS Environment
+aksenv(){
     bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/test.sh)
        pause
 }
+
+# Run command on Pod
+podexec(){
+    echo "Execute cmd on Pod"
+       pause
+}
+
+
 
 # function to display menus
 show_menus() {
     clear
     echo "~~~~~~~~~~~~~~~~~~~~~"
-    echo " M A I N - M E N U"
+    echo " A K S - M E N U"
     echo "~~~~~~~~~~~~~~~~~~~~~"
-    echo "1. Set Terminal"
-    echo "2. Reset Terminal"
-    echo "3. Exit"
+    echo "1. Get AKS Envronment Info"
+    echo "2. Connect to AKS Environment"
+    echo "3. Run command on Pod"
+    echo "4. Exit"
     }
 
 # read input from the keyboard and take a action
@@ -45,9 +54,10 @@ read_options(){
     local choice
     read -p "Enter choice [ 1 - 3] " choice
     case $choice in
-        1) one ;;
-        2) two ;;
-        3) exit 0;;
+        1) aksinfo ;;
+        2) aksenv ;;
+        3) podexec ;;        
+        4) exit 0;;
         *) echo -e "${RED}Error...${STD}" && sleep 2
     esac                                                                                                                                                                                  }
        
