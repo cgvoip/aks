@@ -48,6 +48,7 @@ show_menus() {
     echo "6. View Pod logs"
     echo "7. Port forward to Pod"
     echo "8. Drain Node"
+    echo "9. Modify Nodes"
     echo "4. Exit"
     }
 
