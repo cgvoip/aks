@@ -56,7 +56,7 @@ show_menus() {
     echo "8. Drain Node"
     echo "9. Modify Nodes"
     echo "10. Deploy AKS Cluster Advanced Networking"
-    echo "4. Exit"
+    echo "11. Exit"
     }
 
 # read input from the keyboard and take a action
@@ -65,13 +65,13 @@ show_menus() {
 # Exit when user the user select 3 form the menu option.
 read_options(){
     local choice
-    read -p "Enter choice [ 1 - 4] " choice
+    read -p "Enter choice [ 1 - 11] " choice
     case $choice in
         1) aksinfo ;;
         2) aksenv ;;
         3) podexec ;;
         9) modnodes ;;
-        4) exit 0;;
+        11) exit 0;;
         *) echo -e "${RED}Error...${STD}" && sleep 2
     esac                                                                                                                                                                                  }
        
