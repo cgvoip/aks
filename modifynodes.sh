@@ -38,7 +38,7 @@ podexec(){
 show_menus() {
     clear
     echo "~~~~~~~~~~~~~~~~~~~~~"
-    echo " A K S S C A L I N G - M E N U"
+    echo " A K S - S C A L I N G - M E N U"
     echo "~~~~~~~~~~~~~~~~~~~~~"
     echo "1. Scale a replicaset"
     echo "2. Scale a resource specified in a yaml file"
