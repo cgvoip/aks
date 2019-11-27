@@ -26,6 +26,12 @@ aksenv(){
        pause
 }
 
+# Connect to AKS Environment
+modnodes(){
+    bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/modifynodes.sh)
+       pause
+}
+
 # Run command on Pod
 podexec(){
     echo "Execute cmd on Pod"
@@ -62,7 +68,8 @@ read_options(){
     case $choice in
         1) aksinfo ;;
         2) aksenv ;;
-        3) podexec ;;        
+        3) podexec ;;
+        9) modnodes ;;
         4) exit 0;;
         *) echo -e "${RED}Error...${STD}" && sleep 2
     esac                                                                                                                                                                                  }
