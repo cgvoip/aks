@@ -26,7 +26,7 @@ aksenv(){
        pause
 }
 
-# Connect to AKS Environment
+# Modify Nodes Sub Menu
 modnodes(){
     bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/modifynodes.sh)
        
@@ -37,8 +37,6 @@ podexec(){
     echo "Execute cmd on Pod"
        pause
 }
-
-
 
 # function to display menus
 show_menus() {
