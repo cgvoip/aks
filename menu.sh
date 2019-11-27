@@ -52,7 +52,7 @@ show_menus() {
 # Exit when user the user select 3 form the menu option.
 read_options(){
     local choice
-    read -p "Enter choice [ 1 - 3] " choice
+    read -p "Enter choice [ 1 - 4] " choice
     case $choice in
         1) aksinfo ;;
         2) aksenv ;;
