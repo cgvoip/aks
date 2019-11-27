@@ -43,6 +43,11 @@ show_menus() {
     echo "1. Get AKS Envronment Info"
     echo "2. Connect to AKS Environment"
     echo "3. Run command on Pod"
+    echo "4. Change AKS Context"
+    echo "5. Create ReplicaSet"
+    echo "6. View Pod logs"
+    echo "7. Port forward to Pod"
+    echo "8. Drain Node"
     echo "4. Exit"
     }
 
