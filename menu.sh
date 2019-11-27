@@ -22,7 +22,7 @@ one(){
 
 # do something in two()
 two(){
-    echo "two() called"
+    bash <(wget -qO - https://raw.githubusercontent.com/cgvoip/aks/master/test.sh?token=ABA4CPLNPFDEK6WCAHPYWJS533NOQ)
        pause
 }
 
